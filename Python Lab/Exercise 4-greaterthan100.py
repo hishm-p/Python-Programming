@@ -1,4 +1,4 @@
-a=input("Enter a sequence of strings:- \n")
+a=input("Enter a sequence of numbers:- \n")
 a=list(map(int,a.split(" ")))
 for i in range(0,len(a)):
     if a[i]>100 :
