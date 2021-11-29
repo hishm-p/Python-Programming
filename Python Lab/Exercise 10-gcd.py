@@ -1,4 +1,4 @@
-num1=int(input("Enter a the first number:"))
+num1=int(input("Enter the first number:"))
 num2=int(input("Enter the second number:"))
 if num1>num2:
     limit=num2
