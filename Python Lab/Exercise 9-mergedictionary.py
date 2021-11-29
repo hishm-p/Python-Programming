@@ -6,8 +6,10 @@ def new_dict():
                 value=input("Enter the value:")
                 a[key]=value
         return a
-        
+
+print("Enter the first dictionary \n")        
 dict1=new_dict()
+print("\nEnter the second dictionary \n")
 dict2=new_dict()
 
 def Merge(dict1, dict2):
