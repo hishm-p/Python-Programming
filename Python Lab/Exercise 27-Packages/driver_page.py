@@ -11,8 +11,8 @@ print("Area : ",a)
 p=rectangle.perimeter(l,b)
 print("Perimeter : ",p)
 
-a=graphics.circle.area()
-p=graphics.circle.perimeter()
+graphics.circle.area()
+graphics.circle.perimeter()
 
 l=int(input("\nEnter the length of the cuboid : "))
 b=int(input("Enter the breadth of the cuboid : "))
