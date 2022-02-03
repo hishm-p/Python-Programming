@@ -6,7 +6,7 @@ class employee:
         self.address = address
 
     def show(self):
-        print("\nENTERED INFO")
+        print("\nEMPLOYEE INFO OF",self.empid)
         print("-------------\n")
         print("Employee ID:",self.empid)
         print("Employee Name:",self.name)
@@ -14,7 +14,7 @@ class employee:
         print("Employee Address:",self.address)
 
 class teacher(employee):
-    def __init__(self, department, subject):
+    def __init__(self,empid,name,salary,address,department, subject):
         super().__init__(empid,name,salary,address)
         self.department = department
         self.subject = subject
@@ -24,16 +24,10 @@ class teacher(employee):
         print("Department:",self.department)
         print("Subject:",self.subject)
         
-print("\nENTER YOUR INFO")
-print("---------------\n")
-empid = int(input("Enter Employee ID:"))
-name = input("Enter Employee Name:")
-salary = float(input("Enter Salary:"))
-address = input("Enter your Address:")
-department = input("Enter your Department:")
-subject = input("Enter the subject taught by you:")
 
-emp1 = employee(empid,name,salary,address)
-t1 = teacher(department,subject)
+
+emp1 = employee(101,"Hisham P",12000,"Paravakkal")
+t1 = teacher(102,"Hana",10000,"Paravakkal","Computer Applications","Maths")
 
 t1.show()
+emp1.show()
