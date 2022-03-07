@@ -1,17 +1,13 @@
 from datetime import *
-from time import time
-
 
 class Time:
     def __init__(self, h, m, s):
-        self._hour = h
-        self._min = m
-        self._sec = s
+        self.__hour = h
+        self.__min = m
+        self.__sec = s
 
     def __add__(self, other):
-        return timedelta(
-            hours=self._hour, minutes=self._min, seconds=self._sec
-        ) + timedelta(hours=other._hour, minutes=other._min, seconds=other._sec)
+        return timedelta(hours=self.__hour, minutes=self.__min, seconds=self.__sec) + timedelta(hours=other.__hour, minutes=other.__min, seconds=other.__sec)
 
 
 t1 = Time(2, 5, 45)
