@@ -1,11 +1,13 @@
-num=int(input("Enter a number to check whether it is armstrong or not:-"))
+num=int(input("Enter a number to check whether it's armstrong or not: "))
+l=len(str(num))
 og=num
 sum=0
-while og>0:
-    rem=og%10
-    sum=sum+(rem*rem*rem)
-    og=og//10
-if sum==num:
-    print("The entered number is armstrong")
+while num!=0:
+    rem=num%10
+    sum += rem**l
+    num=num//10
+
+if sum==og:
+    print(og,"is an armstrong number")
 else:
-    print("Tne entered number is not armstrong")
+    print(og,"is not an armstrong number")
