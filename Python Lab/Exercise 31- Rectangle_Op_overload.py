@@ -1,17 +1,17 @@
 class Rectangle:
     def __init__(self, l, w):
-        self._length = l
-        self._width = w
+        self.__length = l
+        self.__width = w
 
-    def __lt__(self, other):
-        if (self._width * self._length) < (other._length * other._width):
+    def __lt__(self,other):
+        if(self.__length * self.__width) < (other.__length * other.__width):
             return True
 
 
-rect1 = Rectangle(2, 5)
+rect1 = Rectangle(3, 5)
 rect2 = Rectangle(3, 6)
 
 if rect1 < rect2:
-    print("Rect1 is small")
+    print("Rectangle 1 has smaller area")
 else:
-    print("Rect2 is small")
+    print("Rectangle 2 has smaller area")
