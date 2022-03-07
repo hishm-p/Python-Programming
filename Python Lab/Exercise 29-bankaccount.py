@@ -13,8 +13,11 @@ class bank:
 
     def withdraw(self):
         draw = int(input("\nEnter the amount to withdraw: "))
-        self.balance -= draw
-        print("Rs.",draw,"is debited from your account\nAVAILABLE BALANCE IS:",self.balance)
+        if self.balance - draw >= 0:
+            self.balance -= draw
+            print("Rs.",draw,"is debited from your account\nAVAILABLE BALANCE IS:",self.balance)
+        else:
+            print("Insufficient Balance!!,Available Balance:",self.balance)    
 
     def display(self):
         print("\nACCOUNT DETAILS")
